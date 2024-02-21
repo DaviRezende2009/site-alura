@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+:root{
+    --preto: black;
+    --branco: white;
+    --ciano: aqua
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--preto);
+    color: var(--branco)
+}
+.destaque{
+    color: var(--ciano);
+}
+.apresentacao{
+    padding: 6% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.apresentacao__conteudo{
+    width: 50%;
+}
+.titulo{
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;
+}
+.paragrafo{
+    display: flex;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 40px 0px;
+}
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__links__botao{
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: center;
+    gap: 0px 16px;
+    border: 2px solid   var(--ciano);
+    border-radius: 8px;
+    padding: 21.5px 0px;
+    font-size: 1.5rem;
+    width: 378px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--branco);
+    font-family: 'Montserrat', sans-serif;
+}
+.apresentacao__links__botao:hover{
+    padding: 30px 40px;
+    background-color: gray;
+    border: 2px solid var(--ciano);
+}
+footer{
+    background-color: var(--ciano);
+    color: var(--preto);
+    font-size: 1.5rem;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+.botoesNavegacao{
+    padding: 2% 15% 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.botoesNavegacaoLink{
+    text-decoration: none;
+    color: var(--ciano);
+    padding: 0px 40px;
+}
+.botoesNavegacaoLink:hover{
+    color: blue;
+}
+.imagem{
+    margin: 0%;
+    height: 50%;
+}
+@media (max-width: 720px) {
+    .botoesNavegacao{
+        margin: 10%;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        margin: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
